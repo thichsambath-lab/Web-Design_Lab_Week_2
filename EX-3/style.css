@@ -1,0 +1,45 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  display: grid;
+  place-items: center;
+  background: #fff;
+  font-family: Arial, sans-serif;
+}
+
+button {
+  min-width: 268px;
+  min-height: 105px;
+  padding: 20px 36px;
+  border: 8px solid #d967b0;
+  border-radius: 42px;
+  background: #f078c5;
+  color: #fff;
+  font: inherit;
+  font-size: 28px;
+  font-weight: 700;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background-color 180ms ease, border-color 180ms ease;
+}
+
+button:hover {
+  border-color: #71365f;
+  background: #a85291;
+}
+
+button:focus-visible {
+  outline: 3px solid #222;
+  outline-offset: 5px;
+}
+
+@media (max-width: 360px) {
+  button {
+    min-width: 0;
+    width: calc(100vw - 48px);
+  }
+}

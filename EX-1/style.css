@@ -1,0 +1,97 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    background: #fff;
+}
+
+body {
+    width: 80%;
+    max-width: 900px;
+    margin: 24px auto;
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    background: #808080;
+    color: #222;
+    font-family: Arial, sans-serif;
+}
+
+body > div {
+    width: 70%;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 10px;
+    background: #fff;
+}
+
+body > div p {
+    margin: 0 0 20px;
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+button {
+    padding: 8px 10px;
+    border: 0;
+    border-radius: 30px;
+    color: #fff;
+    font: inherit;
+    font-size: 12px;
+    cursor: pointer;
+    transition: background-color 160ms ease, transform 160ms ease;
+}
+
+body > div:nth-of-type(1) button {
+    background: #008577;
+}
+
+body > div:nth-of-type(1) button:hover {
+    background: #006b60;
+}
+
+body > div:nth-of-type(2) button {
+    background: #ff9800;
+}
+
+body > div:nth-of-type(2) button:hover {
+    background: #e68900;
+}
+
+body > div:nth-of-type(3) button {
+    background: #800080;
+}
+
+body > div:nth-of-type(3) button:hover {
+    background: #660066;
+}
+
+button:hover {
+    transform: translateY(-1px);
+}
+
+button:focus-visible {
+    outline: 3px solid #222;
+    outline-offset: 3px;
+}
+
+@media (max-width: 480px) {
+    body {
+        width: 100%;
+        margin: 0;
+        padding: 20px 0;
+    }
+
+    body > div {
+        width: calc(100% - 40px);
+        padding: 20px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    button {
+        transition: none;
+    }
+}
